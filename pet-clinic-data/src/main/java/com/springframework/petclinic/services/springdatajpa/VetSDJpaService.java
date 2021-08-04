@@ -1,6 +1,5 @@
 package com.springframework.petclinic.services.springdatajpa;
 
-import com.springframework.petclinic.model.Owner;
 import com.springframework.petclinic.model.Vet;
 import com.springframework.petclinic.repositories.VetRepository;
 import com.springframework.petclinic.services.VetService;
