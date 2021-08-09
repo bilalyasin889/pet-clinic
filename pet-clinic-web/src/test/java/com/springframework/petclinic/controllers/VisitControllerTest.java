@@ -70,6 +70,7 @@ class VisitControllerTest {
                 .build();
         when(petService.findById(anyLong()))
                 .thenReturn(pet);
+
         uriVariables.clear();
         uriVariables.put("ownerId", ownerId.toString());
         uriVariables.put("petId", petId.toString());
@@ -82,7 +83,6 @@ class VisitControllerTest {
 
     @Test
     void initNewVisitForm() throws Exception {
-
         mockMvc.perform(get(visitsUri))
                 .andExpect(status().isOk())
                 .andExpect(view().name(PETS_CREATE_OR_UPDATE_VISIT_FORM));
